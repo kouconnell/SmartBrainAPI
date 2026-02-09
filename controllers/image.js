@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const returnRequestOptions = (imageUrl) => {
-    const PAT = '7c13d72fd80b41729c544f61fa3ad3ad';
+    const PAT = process.env.PAT_CLARIFAI;
     const USER_ID = 'clarifai';       
     const APP_ID = 'main';
     const MODEL_ID = 'face-detection';
